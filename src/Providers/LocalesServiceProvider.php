@@ -16,17 +16,4 @@ class LocalesServiceProvider extends ServiceProvider
     {
         $this->commands(LanguagePublishCommand::class);
     }
-
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        // Publish language files
-        $this->publishes([
-            __DIR__.'../Locales' => resource_path('lang'),
-        ], 'lang');
-    }
 }
