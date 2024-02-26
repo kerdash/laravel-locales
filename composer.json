@@ -1,0 +1,18 @@
+{
+    "name": "hassankerdash/laravel-locales",
+    "description": "Language files in Laravel applications.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HassanKerdash\\Laravel\\Locales\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HassanKerdash\\Laravel\\Locales\\Providers\\LocalesServiceProvider"
+            ]
+        }
+    }
+}
